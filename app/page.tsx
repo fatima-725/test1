@@ -74,6 +74,11 @@ export default function Home() {
           <Image src={desc} alt="desc" />
         </div>
       </div>
+
+      <div className="relative flex items-center justify-center">
+        <Image src={desc} alt="desc" className="object-cover" />
+        <p className="text-black font-medium absolute ">Harry pottter</p>
+      </div>
     </div>
   );
 }
