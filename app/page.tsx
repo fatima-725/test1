@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import desc from "../public/assets/desc.svg";
 import { useState } from "react";
 import {
   Accordion,
@@ -62,6 +63,37 @@ export default function Home() {
         <Link href="/register">
           <button>click</button>
         </Link>
+      </div>
+
+      <div className="mt-4 grid grid-cols-3 gap-0">
+        <div className="col-span-2">
+          <Image src={desc} className="w-[735px] h-[642px] mt-0"></Image>
+          <h2 className=" font-Inter font-medium text-[20px] mt-4">
+            Featured product
+          </h2>
+          <h2 className="font-Inter font-medium text-[20px] text-[#828282]">
+            Description of Featured product
+          </h2>
+          <h2 className="font-Inter font-medium text-[20px]">$10.99</h2>
+        </div>
+        <div className="col-span-1 ">
+          <div>
+            <Image src={desc}></Image>
+            <h2 className="mt-4 font-Inter font-medium text-[20px]">Product</h2>
+            <h2 className="font-Inter font-medium text-[20px] text-[#828282]">
+              Description of first product
+            </h2>
+            <h2 className="font-Inter font-medium text-[20px]">$10.99</h2>
+          </div>
+          <div className="mt-4">
+            <Image src={desc}></Image>
+            <h2 className="mt-4 font-Inter font-medium text-[20px]">Product</h2>
+            <h2 className="font-Inter font-medium text-[20px] text-[#828282]">
+              Description of first product
+            </h2>
+            <h2 className="font-Inter font-medium text-[20px]">$10.99</h2>
+          </div>
+        </div>
       </div>
     </div>
   );
